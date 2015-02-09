@@ -1,4 +1,1 @@
-selenium-qc
-===========
-
-demo repository for selenium tests
+create first description 
