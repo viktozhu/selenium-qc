@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="firstTestSuite" duration-ms="67974" started-at="2015-02-25T18:47:51Z" finished-at="2015-02-25T18:48:59Z">
+  <suite name="firstTestSuite" duration-ms="32152" started-at="2015-02-25T19:27:36Z" finished-at="2015-02-25T19:28:08Z">
     <groups>
     </groups>
-    <test name="SmokeTest" duration-ms="67974" started-at="2015-02-25T18:47:51Z" finished-at="2015-02-25T18:48:59Z">
-      <class name="functional.FilteringTest">
-        <test-method status="PASS" signature="initEnv()[pri:0, instance:functional.FilteringTest@39378e61]" name="initEnv" is-config="true" duration-ms="3305" started-at="2015-02-25T22:47:48Z" finished-at="2015-02-25T22:47:51Z">
+    <test name="SmokeTest" duration-ms="32152" started-at="2015-02-25T19:27:36Z" finished-at="2015-02-25T19:28:08Z">
+      <class name="functional.ExampleActions">
+        <test-method status="PASS" signature="initEnv()[pri:0, instance:functional.ExampleActions@22cb855e]" name="initEnv" is-config="true" duration-ms="5221" started-at="2015-02-25T23:27:30Z" finished-at="2015-02-25T23:27:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initEnv -->
-        <test-method status="PASS" signature="priceFilterTest()[pri:0, instance:functional.FilteringTest@39378e61]" name="priceFilterTest" duration-ms="50577" started-at="2015-02-25T22:47:51Z" finished-at="2015-02-25T22:48:41Z">
+        <test-method status="PASS" signature="exampleTest()[pri:0, instance:functional.ExampleActions@22cb855e]" name="exampleTest" duration-ms="32142" started-at="2015-02-25T23:27:36Z" finished-at="2015-02-25T23:28:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- priceFilterTest -->
-        <test-method status="PASS" signature="visualFilterTest()[pri:0, instance:functional.FilteringTest@39378e61]" name="visualFilterTest" duration-ms="17380" started-at="2015-02-25T22:48:41Z" finished-at="2015-02-25T22:48:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visualFilterTest -->
-        <test-method status="PASS" signature="shutEnv()[pri:0, instance:functional.FilteringTest@39378e61]" name="shutEnv" is-config="true" duration-ms="1633" started-at="2015-02-25T22:48:59Z" finished-at="2015-02-25T22:49:00Z">
+        </test-method> <!-- exampleTest -->
+        <test-method status="PASS" signature="shutEnv()[pri:0, instance:functional.ExampleActions@22cb855e]" name="shutEnv" is-config="true" duration-ms="345" started-at="2015-02-25T23:28:08Z" finished-at="2015-02-25T23:28:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutEnv -->
-      </class> <!-- functional.FilteringTest -->
+      </class> <!-- functional.ExampleActions -->
     </test> <!-- SmokeTest -->
   </suite> <!-- firstTestSuite -->
 </testng-results>

@@ -4,13 +4,12 @@
   <parameter name="expectedCount" value="2"/>
   <test name="SmokeTest(failed)">
     <classes>
-      <class name="functional.FilteringTest">
+      <class name="functional.ExampleActions">
         <methods>
-          <include name="priceFilterTest"/>
+          <include name="exampleTest"/>
           <include name="initEnv"/>
-          <include name="shutEnv"/>
         </methods>
-      </class> <!-- functional.FilteringTest -->
+      </class> <!-- functional.ExampleActions -->
     </classes>
   </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [firstTestSuite] -->
