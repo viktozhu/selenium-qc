@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [firstTestSuite]">
+  <parameter name="expectedCount" value="2"/>
+  <test name="SmokeTest(failed)">
+    <classes>
+      <class name="functional.FilteringTest">
+        <methods>
+          <include name="priceFilterTest"/>
+          <include name="initEnv"/>
+          <include name="shutEnv"/>
+        </methods>
+      </class> <!-- functional.FilteringTest -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [firstTestSuite] -->

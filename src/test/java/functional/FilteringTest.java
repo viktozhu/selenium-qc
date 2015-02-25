@@ -1,10 +1,14 @@
 package functional;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ChildDressPage;
 import pages.ChildPage;
 import pages.HomePage;
+
+import java.util.List;
 
 /**
  * Created by c246T on 23.02.2015.
@@ -16,6 +20,25 @@ public class FilteringTest extends AbstractTest{
     {
         openDetskiyMir();
         openDetskayaOdezhda();
+    }
+
+    @Test
+    public void priceFilterTest()
+    {
+        openDetskiyMir();
+        openDetskayaOdezhda();
+        sortByNew();
+    }
+
+    public void stateFilterTest ()
+    {
+
+    }
+
+    public void sortByNew()
+    {
+        ChildDressPage childDressPage = new ChildDressPage(driver);
+        Assert.assertTrue(childDressPage.sortByNew(), "Sorted by new ");
     }
 
     public void openDetskiyMir()
@@ -37,13 +60,4 @@ public class FilteringTest extends AbstractTest{
 
 
 
-    public void priceFilterTest()
-    {
-
-    }
-
-    public void stateFilterTest ()
-    {
-
-    }
 }

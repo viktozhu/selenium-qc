@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="firstTestSuite" duration-ms="3430" started-at="2015-02-18T17:27:04Z" finished-at="2015-02-18T17:27:08Z">
+  <suite name="firstTestSuite" duration-ms="67974" started-at="2015-02-25T18:47:51Z" finished-at="2015-02-25T18:48:59Z">
     <groups>
     </groups>
-    <test name="SmokeTest" duration-ms="3430" started-at="2015-02-18T17:27:04Z" finished-at="2015-02-18T17:27:08Z">
-      <class name="functional.WikiTest">
-        <test-method status="PASS" signature="initDriver()[pri:0, instance:functional.WikiTest@419431dc]" name="initDriver" is-config="true" duration-ms="9142" started-at="2015-02-18T21:26:55Z" finished-at="2015-02-18T21:27:04Z">
+    <test name="SmokeTest" duration-ms="67974" started-at="2015-02-25T18:47:51Z" finished-at="2015-02-25T18:48:59Z">
+      <class name="functional.FilteringTest">
+        <test-method status="PASS" signature="initEnv()[pri:0, instance:functional.FilteringTest@39378e61]" name="initEnv" is-config="true" duration-ms="3305" started-at="2015-02-25T22:47:48Z" finished-at="2015-02-25T22:47:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initDriver -->
-        <test-method status="PASS" signature="testWiki()[pri:0, instance:functional.WikiTest@419431dc]" name="testWiki" duration-ms="3420" started-at="2015-02-18T21:27:04Z" finished-at="2015-02-18T21:27:08Z">
+        </test-method> <!-- initEnv -->
+        <test-method status="PASS" signature="priceFilterTest()[pri:0, instance:functional.FilteringTest@39378e61]" name="priceFilterTest" duration-ms="50577" started-at="2015-02-25T22:47:51Z" finished-at="2015-02-25T22:48:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWiki -->
-        <test-method status="PASS" signature="shutEnv()[pri:0, instance:functional.WikiTest@419431dc]" name="shutEnv" is-config="true" duration-ms="394" started-at="2015-02-18T21:27:08Z" finished-at="2015-02-18T21:27:08Z">
+        </test-method> <!-- priceFilterTest -->
+        <test-method status="PASS" signature="visualFilterTest()[pri:0, instance:functional.FilteringTest@39378e61]" name="visualFilterTest" duration-ms="17380" started-at="2015-02-25T22:48:41Z" finished-at="2015-02-25T22:48:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualFilterTest -->
+        <test-method status="PASS" signature="shutEnv()[pri:0, instance:functional.FilteringTest@39378e61]" name="shutEnv" is-config="true" duration-ms="1633" started-at="2015-02-25T22:48:59Z" finished-at="2015-02-25T22:49:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutEnv -->
-      </class> <!-- functional.WikiTest -->
+      </class> <!-- functional.FilteringTest -->
     </test> <!-- SmokeTest -->
   </suite> <!-- firstTestSuite -->
 </testng-results>
