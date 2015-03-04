@@ -6,6 +6,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import utils.PropertyLoader;
 import webdriver.Browser;
+import webdriver.BrowserFactory;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -19,15 +20,7 @@ public class AbstractTest {
     @BeforeSuite
     public void initEnv()
     {
-        if (PropertyLoader.loadProperty("browser").equals("firefox"))
-            browser = new Browser(new FirefoxDriver());
-        else if (PropertyLoader.loadProperty("browser").equals("chrome")) {
-            File file = new File("D:\\Selenium\\chromedriver.exe");
-            System.setProperty("webdriver.chrome.driver",file.getAbsolutePath());
-            browser = new Browser(new ChromeDriver());
-        }
-
-        browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        browser = BrowserFactory.create(PropertyLoader.loadProperty("browser"));
     }
 
     @AfterSuite
