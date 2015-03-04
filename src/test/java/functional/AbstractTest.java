@@ -2,6 +2,7 @@ package functional;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import utils.PropertyLoader;
@@ -26,6 +27,8 @@ public class AbstractTest {
             System.setProperty("webdriver.chrome.driver",file.getAbsolutePath());
             browser = new Browser(new ChromeDriver());
         }
+        else
+            browser = new Browser(new HtmlUnitDriver());
 
         browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }

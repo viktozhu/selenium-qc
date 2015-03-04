@@ -1,5 +1,7 @@
 package functional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ChildDressPage;
@@ -11,14 +13,14 @@ import pages.HomePage;
  */
 public class FilteringTest extends AbstractTest{
 
-    @Test
+//    @Test
     public void visualFilterTest()
     {
         openDetskiyMir();
         openDetskayaOdezhda();
     }
 
-    @Test
+//    @Test
     public void priceFilterTest()
     {
         openDetskiyMir();
@@ -26,9 +28,11 @@ public class FilteringTest extends AbstractTest{
         sortByNew();
     }
 
+    @Test
     public void stateFilterTest ()
     {
-
+        Logger logger = LoggerFactory.getLogger(FilteringTest.class);
+        logger.debug("Hello world.");
     }
 
     public void sortByNew()
@@ -39,6 +43,7 @@ public class FilteringTest extends AbstractTest{
 
     public void openDetskiyMir()
     {
+
         HomePage homePage = new HomePage(browser);
         homePage.open();
         homePage.openDetskiyMir();

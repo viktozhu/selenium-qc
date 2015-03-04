@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-firstTestSuite">
-              <span class="suite-name border-skipped">firstTestSuite</span>
+              <span class="suite-name border-passed">firstTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-firstTestSuite">
-                    <span>D:\Selenium\selenium-qc\src\test\resources\testng.xml</span>
+                    <span>D:\Selenium\Code\selenium-qc\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-firstTestSuite" class="hide-methods skipped suite-firstTestSuite"> (hide)</a> <!-- hide-methods skipped suite-firstTestSuite -->
-                      <a href="#" panel-name="suite-firstTestSuite" class="show-methods skipped suite-firstTestSuite"> (show)</a> <!-- show-methods skipped suite-firstTestSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-firstTestSuite" class="hide-methods passed suite-firstTestSuite"> (hide)</a> <!-- hide-methods passed suite-firstTestSuite -->
+                      <a href="#" panel-name="suite-firstTestSuite" class="show-methods passed suite-firstTestSuite"> (show)</a> <!-- show-methods passed suite-firstTestSuite -->
                     </span>
-                    <div class="method-list-content skipped suite-firstTestSuite">
+                    <div class="method-list-content passed suite-firstTestSuite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-firstTestSuite" title="functional.ExampleActions" hash-for-method="exampleTest">exampleTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-firstTestSuite" title="functional.FilteringTest" hash-for-method="stateFilterTest">stateFilterTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-firstTestSuite -->
+                    </div> <!-- method-list-content passed suite-firstTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,25 +116,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-firstTestSuite" class="panel firstTestSuite">
-          <div class="suite-firstTestSuite-class-skipped">
+          <div class="suite-firstTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">functional.ExampleActions</span>
+              <img src="passed.png"/>
+              <span class="class-name">functional.FilteringTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="exampleTest">
-                  </a> <!-- exampleTest -->
-                  <span class="method-name">exampleTest</span>
+                  <a name="stateFilterTest">
+                  </a> <!-- stateFilterTest -->
+                  <span class="method-name">stateFilterTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-firstTestSuite-class-skipped -->
+          </div> <!-- suite-firstTestSuite-class-passed -->
         </div> <!-- panel firstTestSuite -->
         <div panel-name="test-xml-firstTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Selenium\selenium-qc\src\test\resources\testng.xml</span>
+            <span class="header-content">D:\Selenium\Code\selenium-qc\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +144,7 @@
   &lt;parameter name=&quot;expectedCount&quot; value=&quot;2&quot;/&gt;
   &lt;test name=&quot;SmokeTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;functional.ExampleActions&quot;/&gt;
+      &lt;class name=&quot;functional.FilteringTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SmokeTest --&gt;
 &lt;/suite&gt; &lt;!-- firstTestSuite --&gt;
@@ -186,14 +186,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'exampleTest')
-data.setCell(0, 2, 'functional.ExampleActions')
-data.setCell(0, 3, 1);
+data.setCell(0, 1, 'stateFilterTest')
+data.setCell(0, 2, 'functional.FilteringTest')
+data.setCell(0, 3, 243);
 window.suiteTableData['firstTestSuite']= { tableData: data, tableDiv: 'times-div-firstTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 ms</span>
+              <span class="suite-total-time">Total running time: 243 ms</span>
               <div id="times-div-firstTestSuite">
               </div> <!-- times-div-firstTestSuite -->
             </div> <!-- times-div -->
@@ -219,17 +219,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">functional.ExampleActions</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">functional.FilteringTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">initEnv</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">exampleTest</span>
-                <span class="method-start">76 ms</span>
+                <span class="method-name">stateFilterTest</span>
+                <span class="method-start">1259 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">shutEnv</span>
+                <span class="method-start">1525 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
