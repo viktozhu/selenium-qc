@@ -12,8 +12,8 @@ import pages.HomePage;
  * Created by c246T on 23.02.2015.
  */
 public class FilteringTest extends AbstractTest{
-
-//    @Test
+    Logger logger = LoggerFactory.getLogger(FilteringTest.class);
+    @Test
     public void visualFilterTest()
     {
         openDetskiyMir();
@@ -28,10 +28,9 @@ public class FilteringTest extends AbstractTest{
         sortByNew();
     }
 
-    @Test
+//    @Test
     public void stateFilterTest ()
     {
-        Logger logger = LoggerFactory.getLogger(FilteringTest.class);
         logger.debug("Hello world.");
     }
 
@@ -43,7 +42,7 @@ public class FilteringTest extends AbstractTest{
 
     public void openDetskiyMir()
     {
-
+        logger.info("Open detskiy Mir");
         HomePage homePage = new HomePage(browser);
         homePage.open();
         homePage.openDetskiyMir();

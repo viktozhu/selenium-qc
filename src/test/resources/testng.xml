@@ -1,11 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="firstTestSuite" verbose="1" >
+<suite name="firstTestSuite" verbose="1" thread-count="4" >
     <parameter name="expectedCount" value="2"/>
 
-    <test name="SmokeTest">
+    <test name="GridTest" thread-count="2">
         <classes>
-            <class name="functional.FilteringTest" />
+            <class name="functional.GridExample" />
         </classes>
     </test>
+
+    <test name="ParallelTest" thread-count="2">
+        <classes>
+            <class name="functional.ParallelGridTest" />
+        </classes>
+    </test>
+
 </suite>
