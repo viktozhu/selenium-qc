@@ -1,18 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="firstTestSuite" verbose="1" thread-count="4" >
+<suite name="firstTestSuite" verbose="1" parallel="tests" thread-count="2" >
     <parameter name="expectedCount" value="2"/>
 
-    <test name="GridTest" thread-count="2">
+    <test name="GridTest">
         <classes>
             <class name="functional.GridExample" />
         </classes>
     </test>
 
-    <test name="ParallelTest" thread-count="2">
+    <test name="ParallelTest">
         <classes>
             <class name="functional.ParallelGridTest" />
         </classes>
     </test>
 
+    <!--http://blog.wedoqa.com/2013/07/how-to-run-parallel-tests-with-selenium-webdriver-and-testng-2/-->
 </suite>
