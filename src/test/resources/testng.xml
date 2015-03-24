@@ -3,17 +3,31 @@
 <suite name="firstTestSuite" verbose="1" parallel="tests" thread-count="2" >
     <parameter name="expectedCount" value="2"/>
 
-    <test name="GridTest">
-        <classes>
-            <class name="functional.GridExample" />
-        </classes>
-    </test>
+    <!--<test name="GridTest">-->
+        <!--<classes>-->
+            <!--<class name="functional.GridExample" />-->
+        <!--</classes>-->
+    <!--</test>-->
 
-    <test name="ParallelTest">
+    <!--<test name="ParallelTest">-->
+        <!--<classes>-->
+            <!--<class name="functional.ParallelGridTest" />-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <test name="TestLink">
         <classes>
-            <class name="functional.ParallelGridTest" />
+            <class name="testlink.tests.functional.CreateSuiteTest" />
         </classes>
     </test>
+    <!--Create test suite
+    Create test case in this suite
+    Create 3 testlink.steps in this test case
+    :Create test suite
+    Create test case
+    Create 3 testlink.steps:-->
+
+
 
     <!--http://blog.wedoqa.com/2013/07/how-to-run-parallel-tests-with-selenium-webdriver-and-testng-2/-->
 </suite>
