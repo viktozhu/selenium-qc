@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class HomePage extends AbstractPage{
     private static final By version = By.xpath("//div[@class='menu_title']/span[contains(text(),'TestLink')]");
+    private static final By logout = By.linkText("logout");
 
     public HomePage(WebDriver driver)
     {
@@ -22,5 +23,9 @@ public class HomePage extends AbstractPage{
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(version));
         return !driver.findElements(version).isEmpty();
+    }
+
+    public void logout(){
+        driver.findElement(logout).click();
     }
 }
