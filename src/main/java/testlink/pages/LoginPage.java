@@ -3,6 +3,7 @@ package testlink.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import testlink.models.User;
 
 /**
  * Created by 1 on 20.03.2015.
@@ -22,9 +23,9 @@ public class LoginPage extends AbstractPage{
         driver.get(URL);
     }
 
-    public HomePage login(String login, String password) {
-        driver.findElement(loginField).sendKeys(login);
-        driver.findElement(passwordField).sendKeys(password);
+    public HomePage login(User user) {
+        driver.findElement(loginField).sendKeys(user.name);
+        driver.findElement(passwordField).sendKeys(user.password);
         driver.findElement(loginButton).click();
         return new HomePage(driver);
     }
