@@ -1,44 +1,19 @@
-<<<<<<< HEAD
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="firstTestSuite" verbose="1" thread-count="4" >
-    <parameter name="expectedCount" value="2"/>
+<suite name="firstTestSuite" verbose="1" parallel="tests" thread-count="2" >
 
-    <test name="GridTest" thread-count="2">
+    <test name="GridTest">
         <classes>
             <class name="functional.GridExample" />
         </classes>
     </test>
-
-    <test name="ParallelTest" thread-count="2">
+<!---->
+    <test name="ParallelTest">
         <classes>
             <class name="functional.ParallelGridTest" />
         </classes>
     </test>
 
-=======
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
-<suite name="firstTestSuite" verbose="1" parallel="tests" thread-count="2" >
-    <parameter name="expectedCount" value="2"/>
-
-    <!--<test name="GridTest">-->
-        <!--<classes>-->
-            <!--<class name="functional.GridExample" />-->
-        <!--</classes>-->
-    <!--</test>-->
-
-    <!--<test name="ParallelTest">-->
-        <!--<classes>-->
-            <!--<class name="functional.ParallelGridTest" />-->
-        <!--</classes>-->
-    <!--</test>-->
-
-    <test name="TestLink">
-        <classes>
-            <class name="testlink.tests.functional.CreateSuiteTest" />
-        </classes>
-    </test>
     <!--Create test suite
     Create test case in this suite
     Create 3 testlink.steps in this test case
@@ -49,5 +24,4 @@
 
 
     <!--http://blog.wedoqa.com/2013/07/how-to-run-parallel-tests-with-selenium-webdriver-and-testng-2/-->
->>>>>>> origin/master
 </suite>
