@@ -15,6 +15,8 @@ public class ExampleActions extends AbstractTest{
     {
         browser.get("http://olx.ua/uk/");
         Actions actions = new Actions(browser.driver);
+
+
         actions.moveToElement(browser.findElement(By.cssSelector(".icon.block.googleplay")));
         actions.perform();
         try {

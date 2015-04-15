@@ -14,6 +14,8 @@ import testlink.pages.LoginPage;
 import testlink.pages.TestPlanEditPage;
 import testlink.pages.TestPlanManagementPage;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by admin on 08.04.2015.
  */
@@ -23,8 +25,9 @@ public class TestPlanTest {
     @BeforeTest
     public void login(){
         driver = new FirefoxDriver();
-
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         LoginPage loginPage = new LoginPage(driver);
+        loginPage.open();
         loginPage.login(new User());
     }
 
